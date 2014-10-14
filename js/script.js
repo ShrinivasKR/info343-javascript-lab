@@ -8,7 +8,10 @@
 */ 
 
 function addition() {
-	// your code goes here!
+    var num1 = parseFloat(document.getElementById('additionInput1').value);
+    var num2 = parseFloat(document.getElementById('additionInput2').value);
+    var sum = num1 + num2;
+    alert('The sum is ' + sum);
 }
 
 /* --------------------------------------------------------- */
@@ -29,8 +32,13 @@ function addition() {
 
 function vowelCounter() {
 	// your code goes here!
-}
+    var vowels = ['a', 'e', 'i', 'o', 'u'];
+    var string = document.getElementById('vowelInput').value;
+    var chars = string.split('');
+    console.log(chars);
+    var count = 0;
 
+    for (var i = 0; i < chars.length; i++) {
 /* --------------------------------------------------------- */
 
 
@@ -59,7 +67,7 @@ function vowelCounter() {
 */ 
 
 function submit() {
-	
+
 }
 
 function reset() {
